@@ -7,7 +7,7 @@
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
-                <div class="panel-heading">Tipo de propiedad</div>
+                <div class="panel-heading">Categoria</div>
 
                 <div class="panel-body">
 <div class="errores">
@@ -19,10 +19,10 @@
 
 </div>
 
-    <form  method="POST" name='editProperty'>
-      	{{ method_field('put') }}
-      @include('propertyTypes._fields')
-        <input type="submit" value="Guardar cambios" name="submit"/>
+    <form  method="POST" name='categorias/agregar'>
+      	{{ method_field('post') }}
+      @include('categories._fields')
+        <input type="submit" value="Agregar categoria" name="submit"/>
     </form>
 
   </div>

@@ -2,6 +2,6 @@
 
 
 <div>
-  <label for="rating">Name</label>
+  <label for="name">Name</label>
   <input type="text" name="name" id="name" value="{{ old('name',$propertyType->name)}}"/>
 </div>

@@ -1,0 +1,7 @@
+1) Como hago con la validacion del mail si lo quiero modificar pero tambien quiero que sea unico? (no cambiarlo).
+
+2) Como cambio el idioma de faker?
+
+3)Como manejo errores de integridad  de la base de datos en la vista?
+
+4) CUando hago click en submit como sabe a donde ir?

@@ -10,7 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-// PROPERTYTYPE
+// PROPERTYTYPE///////////
 Route::get('/tiposDePropiedades/{propertyType}/editar', 'PropertyTypeController@edit');
 
 Route::put('/tiposDePropiedades/{propertyType}/editar', 'PropertyTypeController@update');
@@ -24,12 +24,33 @@ Route::get('/tiposDePropiedades/agregar', 'PropertyTypeController@new');
 Route::post('/tiposDePropiedades/agregar', 'PropertyTypeController@save');
 
 
+// CLIENTS////////////////
 
+Route::get('/clientes/', 'ClientController@show');
 
+Route::get('/clientes/{client}/editar', 'ClientController@edit');
 
+Route::put('/clientes/{client}/editar', 'ClientController@update');
 
+Route::delete('/clientes/{client}/eliminar', 'ClientController@delete');
 
+Route::get('/clientes/agregar', 'ClientController@new');
 
+Route::post('/clientes/agregar', 'ClientController@save');
+
+//  CATEGORIES
+
+Route::get('/categorias/', 'CategoryController@show');
+
+Route::get('/categorias/agregar', 'CategoryController@new');
+
+Route::post('/categorias/agregar', 'CategoryController@save');
+
+Route::get('/categorias/{category}/editar', 'CategoryController@edit');
+
+Route::put('/categorias/{category}/editar', 'CategoryController@update');
+
+Route::delete('/categorias/{category}/eliminar', 'CategoryController@delete');
 
 
 Route::get('/', function () {
