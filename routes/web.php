@@ -10,7 +10,22 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-// PROPERTYTYPE///////////
+
+
+//CURRENCIES///////////////////////////////
+Route::get('/monedas/', 'CurrencyController@show');
+
+Route::get('/monedas/agregar', 'CurrencyController@new');
+
+Route::post('/monedas/agregar', 'CurrencyController@save');
+
+Route::delete('/monedas/{currency}/eliminar', 'CurrencyController@delete');
+
+Route::get('/monedas/{currency}/editar', 'CurrencyController@edit');
+
+Route::put('/monedas/{currency}/editar', 'CurrencyController@update');
+
+// PROPERTYTYPES///////////
 Route::get('/tiposDePropiedades/{propertyType}/editar', 'PropertyTypeController@edit');
 
 Route::put('/tiposDePropiedades/{propertyType}/editar', 'PropertyTypeController@update');

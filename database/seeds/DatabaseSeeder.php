@@ -16,6 +16,7 @@ class DatabaseSeeder extends Seeder
            properyTypesTableSeeder::class,
            clientTableSeeder::class,
            categoriesTableSeeder::class,
+           currenciesTableSeeder::class,
           ]);
     }
 }

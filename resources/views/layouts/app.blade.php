@@ -36,8 +36,10 @@
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
                     <!-- Left Side Of Navbar -->
                     <ul class="nav navbar-nav">
-                      <li><a href="/clientes">Clientes</a></li>
+                          <li><a href="/clientes">Clientes</a></li>
                           <li><a href="/tiposDePropiedades">Tipos de Propiedades</a></li>
+                          <li><a href="/monedas">Monedas</a></li>
+                          <li><a href="/categorias">Categorias</a></li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
