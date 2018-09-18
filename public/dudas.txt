@@ -5,3 +5,5 @@
 3)Como manejo errores de integridad  de la base de datos en la vista?
 
 4) CUando hago click en submit como sabe a donde ir?
+
+5) En el modelo de property estan bien las relaciones???

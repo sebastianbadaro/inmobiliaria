@@ -10,6 +10,9 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+//properties
+
+Route::get('/propiedades/', 'PropertyController@show');
 
 
 //CURRENCIES///////////////////////////////

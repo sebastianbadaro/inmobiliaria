@@ -40,6 +40,7 @@
                           <li><a href="/tiposDePropiedades">Tipos de Propiedades</a></li>
                           <li><a href="/monedas">Monedas</a></li>
                           <li><a href="/categorias">Categorias</a></li>
+                          <li><a href="/propiedades">Propiedades</a></li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
