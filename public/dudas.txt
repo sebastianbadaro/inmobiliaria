@@ -1,9 +1,39 @@
 1) Como hago con la validacion del mail si lo quiero modificar pero tambien quiero que sea unico? (no cambiarlo).
+    'email' => 'required|max:60|email|unique:clients,email,'.$client->id,
+unique exeptes en valor
 
 2) Como cambio el idioma de faker?
+u cant
 
 3)Como manejo errores de integridad  de la base de datos en la vista?
 
+Con try catch.
+
 4) CUando hago click en submit como sabe a donde ir?
 
+
+
 5) En el modelo de property estan bien las relaciones???
+
+Si, no poruqe son one to one y estan del lado de la propiedad.
+
+
+
+
+
+
+6) Puedo hacer que se cree el esquema solo con artisan?
+
+7) En algun formulario me aparece un token raro como get. que es?
+
+8) Link en botones con rout, compact. como se usa?
+
+midleware para controladores de cosas que son solo para admins u algun rol especifico de usuario.
+
+text rigth para el texto del otro controladores
+
+->name() en la ruta para llmamar a una ruta por el nombre.
+
+bript para encriptar passwords
+
+agregar volver

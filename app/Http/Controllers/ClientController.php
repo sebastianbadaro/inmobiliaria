@@ -8,7 +8,7 @@ class ClientController extends Controller
 {
     public function show()
     {
-      $clients = Client::paginate(10);
+      $clients = Client::with('Property')->paginate(10);
       return view('clients.clients',compact('clients'));
     }
 
@@ -31,7 +31,7 @@ class ClientController extends Controller
             'first_name' => 'required|max:60',
             'last_name' => 'required|max:60',
             'phone' => 'required|max:60',
-            'email' => 'required|max:60|email ',
+            'email' => 'required|max:60|email|unique:clients,email,'.$client->id,
             'address' => 'required|max:200'
 
         ],
@@ -56,7 +56,7 @@ class ClientController extends Controller
       $client = new Client();
       return view('clients.newClient',compact('client'));
     }
-    public function save(Request $request, Client $client)
+    public function save(Request $request)
     {
       $this->validate(
         $request,
@@ -65,7 +65,8 @@ class ClientController extends Controller
             'last_name' => 'required|max:60',
             'phone' => 'required|max:60',
             'email' => 'required|max:60|email ',
-            'address' => 'required|max:200'
+            'address' => 'required|max:200',
+              'email' => 'required|max:60|email|unique:clients,email',
 
         ],
         [
@@ -78,6 +79,7 @@ class ClientController extends Controller
             'address' => 'Direccion'
         ]
     );
+    $clien = new Client;
     $client->fill($request->all());
     $client->save();
 
